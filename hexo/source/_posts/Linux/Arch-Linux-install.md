@@ -4,29 +4,29 @@ title:  "Arch Linux 的安装"
 date:   2018-10-01 18:19:50 +0800
 categories: Linux
 ---
-**还是很简单的，就是一些基础的操作。**
-**本文参照 Arch Linux 官方 Wiki ，地址：[Installation guide ](https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#)**
-**现在已经提供了与本文环境相搭配的安装脚本，在[https://github.com/lengqing5977/arch-install-script](https://github.com/lengqing5977/arch-install-script)里可以根据README使用。**
 
-## 0 创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）
+**本文参照 Arch Linux 官方 Wiki ，地址：[Installation guide ](https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#)**
+**现在已经提供了与本文环境相搭配的安装脚本，在[https://github.com/lengqing-org/arch-install](https://github.com/lengqing-org/arch-install)里可以根据README使用。**
+
+##  创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）
 主要就是客户机系统类型的选择，
 ![system](https://blog.lengqing.org/pics/blog/arch_install/1.png)
 
 还有就是引导的选择，我这里选用UEFI引导。
 ![UEFI](https://blog.lengqing.org/pics/blog/arch_install/2.png)
 
-## 1 准备启动盘
+##  准备启动盘
 下载启动镜像，由于在中国大陆地区，我选择网易163的下载地址：
 [http://mirrors.163.com/archlinux/iso/](http://mirrors.163.com/archlinux/iso/)
 下载好后检查 MD5 值，
 然后可以自行制作启动U盘，或者挂载进虚拟机。
 
-## 2 开机
+##  开机
 ![start](https://blog.lengqing.org/pics/blog/arch_install/3.png)
 准备好了
 ![already](https://blog.lengqing.org/pics/blog/arch_install/4.png)
 
-## 3 联网以及更新系统时间
+##  联网以及更新系统时间
 
 ```shell
 dhcpcd
@@ -42,7 +42,7 @@ ping -c 4 baidu.com
 timedatectl set-ntp true
 ```
 
-## 4 分区及挂载分区
+##  分区及挂载分区
 列出磁盘
 
 ```shell
@@ -125,7 +125,7 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 ```
 
-## 5 安装基本系统
+## 安装基本系统
 选择镜像源
 编辑源列表文件
 ```shell
@@ -138,16 +138,16 @@ nano /etc/pacman.d/mirrorlist
 
 安装基本包（ base-devel 不是必须的，可以不加）
 ```shell
-pacstrap /mnt base base-devel
+pacstrap /mnt base linux linux-firmware
 ```
 ![base](https://blog.lengqing.org/pics/blog/arch_install/10.png)
 这个样子就是系统装好了，只不过还不能开机
 
 
-## 6 开机前配置
+##  开机前配置
 生成自动挂载分区的 fstab 文件
 ```shell
-genfstab -L /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 ```
 检查是否正确
 ```shell
@@ -242,7 +242,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 （这一行在很下面，翻半天），保存，重新生成配置文件
 
 
-## 7 重启进入新系统
+##  重启进入新系统
 安装基本上结束了
 ```shell
 exit

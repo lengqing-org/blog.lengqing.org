@@ -18,36 +18,9 @@ date:   2019-08-29 19:30:00 +0800
 
 
 
-# 协议 ![CC](pics/blog/about/cc_icon_black.png) ![attribution](pics/blog/about/attribution_icon_black.png)
+# 免责声明
 
-本博客所有文章均遵守[知识共享许可协议](<https://creativecommons.org/licenses/by/3.0/deed.zh>)，
-
-这是一份普通人可以理解的[许可协议](https://creativecommons.org/licenses/by/3.0/legalcode.zh-Hans)概要 (但不是替代) 。 [免责声明](https://creativecommons.org/licenses/by/3.0/deed.zh#).
-
-
-
-### 您可以自由地：
-
-- **共享** — 在任何媒介以任何形式复制、发行本作品
-- **演绎** — 修改、转换或以本作品为基础进行创作
-- 在任何用途下，甚至商业目的。
-- 只要你遵守许可协议条款，许可人就无法收回你的这些权利。
-
-------
-
-
-
-### 惟须遵守下列条件：
-
-- **署名** — 您必须给出[适当的署名](https://creativecommons.org/licenses/by/3.0/deed.zh#)，提供指向本许可协议的链接，同时[标明是否（对原始作品）作了修改](https://creativecommons.org/licenses/by/3.0/deed.zh#)。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
-
-- **没有附加限制** — 您不得适用法律术语或者 [技术措施](https://creativecommons.org/licenses/by/3.0/deed.zh#) 从而限制其他人做许可协议允许的事情。
-
-------
-
-
-
-### 声明：
-
-- 您不必因为公共领域的作品要素而遵守许可协议，或者您的使用被可适用的 [例外或限制](https://creativecommons.org/licenses/by/3.0/deed.zh#)所允许。
-- 不提供担保。许可协议可能不会给与您意图使用的所必须的所有许可。例如，其他权利比如[形象权、隐私权或人格权](https://creativecommons.org/licenses/by/3.0/deed.zh#)可能限制您如何使用作品。
+本博客所有文章均不对读者负责！！
+任何读者都可以自由地相信，或不信本博客任何内容，因读者自己操作造成的任何实体或非实体损失，与本博客及本人无关，本博客及本人概不负责！
+本博客及本人没有责任也没有义务更新过时的文章或者教程！
+本博客以及本人没有责任也没有义务帮助读者或者帮助读者另写新教程！

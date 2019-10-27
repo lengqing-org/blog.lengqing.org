@@ -951,7 +951,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 06:22:58" itemprop="dateModified" datetime="2019-10-27T06:22:58+08:00">2019-10-27</time>
+                <time title="修改时间：2019-10-27 08:33:55" itemprop="dateModified" datetime="2019-10-27T08:33:55+08:00">2019-10-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -976,18 +976,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>还是很简单的，就是一些基础的操作。</strong><br><strong>本文参照 Arch Linux 官方 Wiki ，地址：<a href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#" target="_blank" rel="noopener">Installation guide </a></strong><br><strong>现在已经提供了与本文环境相搭配的安装脚本，在<a href="https://github.com/lengqing5977/arch-install-script" target="_blank" rel="noopener">https://github.com/lengqing5977/arch-install-script</a>里可以根据README使用。</strong></p>
-<h2 id="0-创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）"><a href="#0-创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）" class="headerlink" title="0 创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）"></a>0 创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）</h2><p>主要就是客户机系统类型的选择，<br><img src="https://blog.lengqing.org/pics/blog/arch_install/1.png" alt="system"></p>
+          <p><strong>本文参照 Arch Linux 官方 Wiki ，地址：<a href="https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#" target="_blank" rel="noopener">Installation guide </a></strong><br><strong>现在已经提供了与本文环境相搭配的安装脚本，在<a href="https://github.com/lengqing-org/arch-install" target="_blank" rel="noopener">https://github.com/lengqing-org/arch-install</a>里可以根据README使用。</strong></p>
+<h2 id="创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）"><a href="#创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）" class="headerlink" title="创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）"></a>创建虚拟机（这不是必须的，也可以不一样，实机建议UEFI引导，本文只介绍UEFI引导）</h2><p>主要就是客户机系统类型的选择，<br><img src="https://blog.lengqing.org/pics/blog/arch_install/1.png" alt="system"></p>
 <p>还有就是引导的选择，我这里选用UEFI引导。<br><img src="https://blog.lengqing.org/pics/blog/arch_install/2.png" alt="UEFI"></p>
-<h2 id="1-准备启动盘"><a href="#1-准备启动盘" class="headerlink" title="1 准备启动盘"></a>1 准备启动盘</h2><p>下载启动镜像，由于在中国大陆地区，我选择网易163的下载地址：<br><a href="http://mirrors.163.com/archlinux/iso/" target="_blank" rel="noopener">http://mirrors.163.com/archlinux/iso/</a><br>下载好后检查 MD5 值，<br>然后可以自行制作启动U盘，或者挂载进虚拟机。</p>
-<h2 id="2-开机"><a href="#2-开机" class="headerlink" title="2 开机"></a>2 开机</h2><p><img src="https://blog.lengqing.org/pics/blog/arch_install/3.png" alt="start"><br>准备好了<br><img src="https://blog.lengqing.org/pics/blog/arch_install/4.png" alt="already"></p>
-<h2 id="3-联网以及更新系统时间"><a href="#3-联网以及更新系统时间" class="headerlink" title="3 联网以及更新系统时间"></a>3 联网以及更新系统时间</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dhcpcd</span><br><span class="line">ping -c 4 baidu.com</span><br></pre></td></tr></table></figure>
+<h2 id="准备启动盘"><a href="#准备启动盘" class="headerlink" title="准备启动盘"></a>准备启动盘</h2><p>下载启动镜像，由于在中国大陆地区，我选择网易163的下载地址：<br><a href="http://mirrors.163.com/archlinux/iso/" target="_blank" rel="noopener">http://mirrors.163.com/archlinux/iso/</a><br>下载好后检查 MD5 值，<br>然后可以自行制作启动U盘，或者挂载进虚拟机。</p>
+<h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p><img src="https://blog.lengqing.org/pics/blog/arch_install/3.png" alt="start"><br>准备好了<br><img src="https://blog.lengqing.org/pics/blog/arch_install/4.png" alt="already"></p>
+<h2 id="联网以及更新系统时间"><a href="#联网以及更新系统时间" class="headerlink" title="联网以及更新系统时间"></a>联网以及更新系统时间</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dhcpcd</span><br><span class="line">ping -c 4 baidu.com</span><br></pre></td></tr></table></figure>
 
 <p>查看结果显示可以 ping 通，联网成功<br><img src="https://blog.lengqing.org/pics/blog/arch_install/5.png" alt="network"></p>
 <p>更新系统时间，没啥输出，不用管</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl set-ntp true</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-分区及挂载分区"><a href="#4-分区及挂载分区" class="headerlink" title="4 分区及挂载分区"></a>4 分区及挂载分区</h2><p>列出磁盘</p>
+<h2 id="分区及挂载分区"><a href="#分区及挂载分区" class="headerlink" title="分区及挂载分区"></a>分区及挂载分区</h2><p>列出磁盘</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fdisk -l</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://blog.lengqing.org/pics/blog/arch_install/6.png" alt="disklist"><br>我这里第一块是 60GiB 的盘，设备是 /dev/sda 。<br>第二块应该是启动盘，不用管。</p>
@@ -1035,16 +1035,16 @@
 <p>挂载 esp 分区</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/boot</span><br><span class="line">mount /dev/sda1 /mnt/boot</span><br></pre></td></tr></table></figure>
 
-<h2 id="5-安装基本系统"><a href="#5-安装基本系统" class="headerlink" title="5 安装基本系统"></a>5 安装基本系统</h2><p>选择镜像源<br>编辑源列表文件</p>
+<h2 id="安装基本系统"><a href="#安装基本系统" class="headerlink" title="安装基本系统"></a>安装基本系统</h2><p>选择镜像源<br>编辑源列表文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/pacman.d/mirrorlist</span><br></pre></td></tr></table></figure>
 
 <p>将 China 的那一行挪到最前面（也可以直接在最前面加上 China 的源地址，上面的具有优先权）<br>找到那一行，光标在最前面的时候直接按下 Ctrl+K ，然后回到第一行按下 Ctrl+U ，手打也行<br><img src="https://blog.lengqing.org/pics/blog/arch_install/9.png" alt="mirror"><br>然后按下 Ctrl+X ，输入 y ，回车，即可保存</p>
 <p>安装基本包（ base-devel 不是必须的，可以不加）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacstrap /mnt base base-devel</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacstrap /mnt base linux linux-firmware</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://blog.lengqing.org/pics/blog/arch_install/10.png" alt="base"><br>这个样子就是系统装好了，只不过还不能开机</p>
-<h2 id="6-开机前配置"><a href="#6-开机前配置" class="headerlink" title="6 开机前配置"></a>6 开机前配置</h2><p>生成自动挂载分区的 fstab 文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">genfstab -L /mnt &gt;&gt; /mnt/etc/fstab</span><br></pre></td></tr></table></figure>
+<h2 id="开机前配置"><a href="#开机前配置" class="headerlink" title="开机前配置"></a>开机前配置</h2><p>生成自动挂载分区的 fstab 文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span><br></pre></td></tr></table></figure>
 
 <p>检查是否正确</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /mnt/etc/fstab</span><br></pre></td></tr></table></figure>
@@ -1109,7 +1109,7 @@
 <p>warning failed to connect to lvmetad，falling back to device scanning.</p>
 </blockquote>
 <p>编辑 /etc/lvm/lvm.conf 文件，找到 use_lvmetad = 1 将1修改为0<br>（这一行在很下面，翻半天），保存，重新生成配置文件</p>
-<h2 id="7-重启进入新系统"><a href="#7-重启进入新系统" class="headerlink" title="7 重启进入新系统"></a>7 重启进入新系统</h2><p>安装基本上结束了</p>
+<h2 id="重启进入新系统"><a href="#重启进入新系统" class="headerlink" title="重启进入新系统"></a>重启进入新系统</h2><p>安装基本上结束了</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
 
 <p>顺便拔掉启动盘<br>开机就算是进入新系统了，如果不能开机我也不管了，教程到这里结束<br>正常的开机应该跟我的一样<br><img src="https://blog.lengqing.org/pics/blog/arch_install/13.png" alt="boot"><br>然后滚更新，最新的，很棒！<br><img src="https://blog.lengqing.org/pics/blog/arch_install/14.png" alt="update"></p>
