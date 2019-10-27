@@ -2,6 +2,7 @@
 layout: post
 title:  "Github使用GPG密钥commit"
 date:   2019-08-28 22:25:00 +0800
+updated: 2019-10-27 11:26:00 +0800
 categories: Linux
 ---
 参考文档：[[git]使用GPG签名你的commit](https://www.cnblogs.com/xueweihan/p/5430451.html)
