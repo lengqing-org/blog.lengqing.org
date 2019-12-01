@@ -6,7 +6,7 @@ date:   2019-08-29 19:30:00 +0800
 
 我是冷清，这是我的博客。
 
-鉴于北美超售王AlphaRacks跑路，VPS中1周内未来得及备份的数据丢失，因此将博客移至[Github Pages](https://pages.github.com)。
+鉴于北美超售王`AlphaRacks`(现马甲为`PSK Hosting`)跑路，VPS中1周内未来得及备份的数据丢失，因此将博客移至[Github Pages](https://pages.github.com)。
 
 ![ku](pics/blog/about/huajiku.jpg)
 
