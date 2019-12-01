@@ -667,7 +667,7 @@ lengqinglvmext4
 
 移除之前，需要移除的磁盘不能有数据，所以需要将数据转移到其它磁盘上，其它磁盘需要足够大能容纳已分配的空间，然后转移完成就可以移除了。
 
-这里移除先添加的磁盘sdb，因为数据肯定在它上面。（我猜的，管它在哪个上面，我就是要移除这块）
+这里移除先添加的磁盘sdb，因为数据肯定在它上面。~~（我猜的，管它在哪个上面，我就是要移除这块）~~
 
 将物理卷sdb1上的数据转移到物理卷sdc1上
 
@@ -699,8 +699,20 @@ tmpfs                   tmpfs     394M   12K  394M   1% /run/user/1000
 linux-wugz:/home/lengqing # cat /mnt/lvm/lengqinglvmext4
 lengqinglvmext4
 ```
+其实可以先查看物理卷的占用（我这里已经移除了sdb1，但也能看出来sdc1现在总共20G，用了15G，5G剩余）
+
+```shell
+linux-wugz:/home/lengqing # pvscan
+  PV /dev/sda2   VG system          lvm2 [15.99 GiB / 0    free]
+  PV /dev/sdc1   VG VG1             lvm2 [20.00 GiB / 5.00 GiB free]
+  PV /dev/sdb1                      lvm2 [20.00 GiB]
+  Total: 3 [55.98 GiB] / in use: 2 [35.98 GiB] / in no VG: 1 [20.00 GiB]
+```
 
 ## 替换物理磁盘
 
 替换磁盘=先加入磁盘，再移除磁盘。
 
+方法和步骤前面都有。
+
+# 完
