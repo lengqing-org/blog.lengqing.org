@@ -184,7 +184,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.lengqing.org/2019/07/18/Linux/Ubuntu-hostname/">
+    <link itemprop="mainEntityOfPage" href="https://blog.lengqing.org/2019/07/22/Linux/esxi-rdm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://blog.lengqing.org/pics/blog/logo.png">
@@ -198,7 +198,91 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/07/18/Linux/Ubuntu-hostname/" class="post-title-link" itemprop="url">Ubuntu Server 18.04 修改主机名</a>
+            <a href="/2019/07/22/Linux/esxi-rdm/" class="post-title-link" itemprop="url">ESXi直通硬盘</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-07-22 21:12:00" itemprop="dateCreated datePublished" datetime="2019-07-22T21:12:00+08:00">2019-07-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-02 03:44:35" itemprop="dateModified" datetime="2019-12-02T03:44:35+08:00">2019-12-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>参考文章：<a href="https://kb.vmware.com/s/article/1017530?lang=zh_CN" target="_blank" rel="noopener">本地存储的裸设备映射</a></p>
+<p>1 ssh连接esxi</p>
+<p>2 列出磁盘，也可以在web控制台中查看</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l /vmfs/devices/disks</span><br></pre></td></tr></table></figure>
+
+<p>3 将设备配置为 RDM，并将 RDM 指针文件输出到您所选的目标</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vmkfstools -z /vmfs/devices/disks/磁盘设备名 /vmfs/volumes/存储池/目录/虚拟磁盘名.vmdk</span><br></pre></td></tr></table></figure>
+
+<p>4 在虚拟机中添加映射的虚拟磁盘</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lengqing.org/2019/07/18/Linux/Ubuntu-change-hostname/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://blog.lengqing.org/pics/blog/logo.png">
+      <meta itemprop="name" content="lengqing5977">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="冷清的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/07/18/Linux/Ubuntu-change-hostname/" class="post-title-link" itemprop="url">Ubuntu Server 18.04 修改主机名</a>
         </h1>
 
         <div class="post-meta">
@@ -215,7 +299,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 11:27:46" itemprop="dateModified" datetime="2019-10-27T11:27:46+08:00">2019-10-27</time>
+                <time title="修改时间：2019-12-02 03:44:35" itemprop="dateModified" datetime="2019-12-02T03:44:35+08:00">2019-12-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1397,7 +1481,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 11:27:46" itemprop="dateModified" datetime="2019-10-27T11:27:46+08:00">2019-10-27</time>
+                <time title="修改时间：2019-12-02 03:44:36" itemprop="dateModified" datetime="2019-12-02T03:44:36+08:00">2019-12-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1504,7 +1588,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 11:27:46" itemprop="dateModified" datetime="2019-10-27T11:27:46+08:00">2019-10-27</time>
+                <time title="修改时间：2019-12-02 03:44:36" itemprop="dateModified" datetime="2019-12-02T03:44:36+08:00">2019-12-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1584,7 +1668,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 11:27:46" itemprop="dateModified" datetime="2019-10-27T11:27:46+08:00">2019-10-27</time>
+                <time title="修改时间：2019-12-02 03:44:35" itemprop="dateModified" datetime="2019-12-02T03:44:35+08:00">2019-12-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1610,93 +1694,6 @@
 
       
           <h3 id="0-在套件中心安装Git-Server"><a href="#0-在套件中心安装Git-Server" class="headerlink" title="0 在套件中心安装Git Server"></a>0 在套件中心安装Git Server</h3><h3 id="1-新建普通账户git"><a href="#1-新建普通账户git" class="headerlink" title="1 新建普通账户git"></a>1 新建普通账户git</h3>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.lengqing.org/2019/04/21/Server/DELL-iDRAC-insert-ssl-cert/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://blog.lengqing.org/pics/blog/logo.png">
-      <meta itemprop="name" content="lengqing5977">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="冷清的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/04/21/Server/DELL-iDRAC-insert-ssl-cert/" class="post-title-link" itemprop="url">在Dell iDRAC里导入自己的SSL证书</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-21 01:07:00" itemprop="dateCreated datePublished" datetime="2019-04-21T01:07:00+08:00">2019-04-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-27 11:27:46" itemprop="dateModified" datetime="2019-10-27T11:27:46+08:00">2019-10-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Server/" itemprop="url" rel="index">
-                    <span itemprop="name">Server</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>主要内容转载自：<a href="https://blog.vsean.net/post/186" target="_blank" rel="noopener">在Dell iDRAC里导入wildcard SSL证书的方法</a>以及 <a href="https://blog.nanpuyue.com/2018/039.html" target="_blank" rel="noopener">为 Dell iDRAC8 上传 SSL 证书</a>。<br>琢磨了好久要换证书了，主要是因为自带的10年戴尔证书不受Java信任，Java8开始的版本因为安全政策问题没法用虚拟控制台，一直用的Java7，不敢更新，一更新就不让连。。。</p>
-<p><strong>（然而换好证书也并不能，还得用jre7，推测这个证书只是web页面的证书，虚拟控制台还是用的戴尔的数字签名）</strong></p>
-<p><strong>要先在idrac的“网页界面-iDRAC 设置-服务”中启用“远程 RACADM”，否则就没法弄，网上的教程都不讲这个的，弄得我总失败。</strong></p>
-<h3 id="0-从戴尔官网下载racadm工具包，Linux和Windows平台的都有"><a href="#0-从戴尔官网下载racadm工具包，Linux和Windows平台的都有" class="headerlink" title="0 从戴尔官网下载racadm工具包，Linux和Windows平台的都有"></a>0 从戴尔官网下载racadm工具包，Linux和Windows平台的都有</h3><p>然后安装</p>
-<h3 id="1-将iDRAC的证书长度扩展到2048bit-但我没弄这个好像也没啥问题"><a href="#1-将iDRAC的证书长度扩展到2048bit-但我没弄这个好像也没啥问题" class="headerlink" title="1 将iDRAC的证书长度扩展到2048bit(但我没弄这个好像也没啥问题)"></a>1 将iDRAC的证书长度扩展到2048bit(但我没弄这个好像也没啥问题)</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">racadm -r [server ip] -i config -g cfgRacSecurity -o cfgRacSecCsrKeySize 2048</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-上传私钥"><a href="#2-上传私钥" class="headerlink" title="2 上传私钥"></a>2 上传私钥</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">racadm -r [server ip] -i sslkeyupload -t 1 -f 私钥.key</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-上传证书（iDRAC只接受X509-Base64编码的证书，不接受二进制编码-DER-证书）"><a href="#3-上传证书（iDRAC只接受X509-Base64编码的证书，不接受二进制编码-DER-证书）" class="headerlink" title="3 上传证书（iDRAC只接受X509 Base64编码的证书，不接受二进制编码(DER)证书）"></a>3 上传证书（iDRAC只接受X509 Base64编码的证书，不接受二进制编码(DER)证书）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">racadm -r [server ip] -i sslcertupload -t 1 -f 证书.crt</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-使证书生效（我的自己重启了，没用上这一步）"><a href="#4-使证书生效（我的自己重启了，没用上这一步）" class="headerlink" title="4 使证书生效（我的自己重启了，没用上这一步）"></a>4 使证书生效（我的自己重启了，没用上这一步）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">racadm -r [server ip] -i racreset</span><br></pre></td></tr></table></figure>
-
-
       
     </div>
 
@@ -1761,7 +1758,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
