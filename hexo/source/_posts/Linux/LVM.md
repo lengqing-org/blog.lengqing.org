@@ -2,7 +2,7 @@
 layout: post
 title:  "LVM的基本使用方法"
 date:   2019-12-02 00:17:00 +0800
-updated: 2019-12-02 03:42:00 +0800
+updated: 2019-12-02 21:36:00 +0800
 categories: Linux
 ---
 
