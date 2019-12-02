@@ -148,7 +148,7 @@ linux-wugz:/home/lengqing # vgdisplay
   VG UUID               ojpEne-jsFm-uB6R-azHU-zJmt-wP46-JvFeNc
 ```
 
-这里是4M的PE，总共5119个PE，20.00GiB
+这里是4M的PE，总共5119个PE，离显示的20.00GiB还差4MiB
 
 然后在VG1上创建名为LV1的逻辑卷
 
@@ -156,7 +156,7 @@ linux-wugz:/home/lengqing # vgdisplay
 linux-wugz:/home/lengqing # lvcreate -l 5119 -n LV1 VG1
   Logical volume "LV1" created.
 ```
-这里使用-l的参数，直接分配PE数量，也可以使用-L的参数，直接分配空间大小。但是实际可分配的空间可能不足以分配，比如显示20.00GiB，实际可分配空间可能只有19.9999GiB，直接分配20G就会报错。
+这里使用-l的参数，直接分配PE数量，也可以使用-L的参数，直接分配空间大小。但是实际可分配的空间不足以分配，比如显示20.00GiB，实际可分配空间只有5119x4MiB=20476MiB=19.996GiB，直接分配20G就会报错。
 
 到这里就已经创建好逻辑卷了，查看一下，这里还是有一个是系统创建的逻辑卷，叫root
 
@@ -290,8 +290,6 @@ Device     Start      End  Sectors Size Type
 /dev/sdc1   2048 41943006 41940959  20G Linux LVM
 linux-wugz:/home/lengqing # pvcreate /dev/sdc1
   Physical volume "/dev/sdc1" successfully created.
-linux-wugz:/home/lengqing # vgex
-vgexport  vgextend
 linux-wugz:/home/lengqing # vgextend VG1 /dev/sdc1
   Volume group "VG1" successfully extended
 ```
