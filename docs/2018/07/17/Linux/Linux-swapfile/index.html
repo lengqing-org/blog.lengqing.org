@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 4.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="https://blog.lengqing.org/pics/blog/logo.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://blog.lengqing.org/pics/blog/logo.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://blog.lengqing.org/pics/blog/logo.png">
@@ -50,17 +50,17 @@
   };
 </script>
 
-  <meta name="description" content="以root或sudo运行创建swapfile1dd if=/dev/zero of=/swapfile bs=1024 count=2048000  启用swapfile12mkswap /swapfileswapon /swapfile  加入fstab /swapfile        swap        swap      defaults         0 0  查看swap1cat">
+  <meta name="description" content="以root或sudo运行创建swapfile1dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;swapfile bs&#x3D;1024 count&#x3D;2048000  启用swapfile12mkswap &#x2F;swapfileswapon &#x2F;swapfile  加入fstab &#x2F;swapfile        swap        swap      defaults         0 0  查看swap1cat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux swapfile 的创建使用">
 <meta property="og:url" content="https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/index.html">
 <meta property="og:site_name" content="冷清的博客">
-<meta property="og:description" content="以root或sudo运行创建swapfile1dd if=/dev/zero of=/swapfile bs=1024 count=2048000  启用swapfile12mkswap /swapfileswapon /swapfile  加入fstab /swapfile        swap        swap      defaults         0 0  查看swap1cat">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-01T19:44:35.890Z">
+<meta property="og:description" content="以root或sudo运行创建swapfile1dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;swapfile bs&#x3D;1024 count&#x3D;2048000  启用swapfile12mkswap &#x2F;swapfileswapon &#x2F;swapfile  加入fstab &#x2F;swapfile        swap        swap      defaults         0 0  查看swap1cat">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-07-16T17:53:00.000Z">
+<meta property="article:modified_time" content="2020-04-14T09:14:16.000Z">
+<meta property="article:author" content="lengqing5977">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux swapfile 的创建使用">
-<meta name="twitter:description" content="以root或sudo运行创建swapfile1dd if=/dev/zero of=/swapfile bs=1024 count=2048000  启用swapfile12mkswap /swapfileswapon /swapfile  加入fstab /swapfile        swap        swap      defaults         0 0  查看swap1cat">
 
 <link rel="canonical" href="https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/">
 
@@ -218,7 +218,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-02 03:44:35" itemprop="dateModified" datetime="2019-12-02T03:44:35+08:00">2019-12-02</time>
+                <time title="修改时间：2020-04-14 17:14:16" itemprop="dateModified" datetime="2020-04-14T17:14:16+08:00">2020-04-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -253,9 +253,7 @@
 <h4 id="查看swap"><a href="#查看swap" class="headerlink" title="查看swap"></a>查看swap</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/swaps</span><br></pre></td></tr></table></figure>
 
 <h4 id="关闭swap"><a href="#关闭swap" class="headerlink" title="关闭swap"></a>关闭swap</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff /swapfile</span><br></pre></td></tr></table></figure>
-
 <h4 id="删除swapfile"><a href="#删除swapfile" class="headerlink" title="删除swapfile"></a>删除swapfile</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm /swapfile</span><br></pre></td></tr></table></figure>
-
 
     </div>
 
@@ -365,10 +363,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/lengqing5977" title="GitHub &rarr; https://github.com/lengqing5977" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/lengqing5977" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;lengqing5977" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:root@lengqing.org" title="E-Mail &rarr; mailto:root@lengqing.org" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:root@lengqing.org" title="E-Mail &amp;rarr; mailto:root@lengqing.org" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
@@ -423,9 +421,17 @@
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/muse.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
