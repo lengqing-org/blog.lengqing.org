@@ -50,33 +50,29 @@
   };
 </script>
 
-  <meta name="description" content="以root或sudo运行创建swapfile1dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;swapfile bs&#x3D;1024 count&#x3D;2048000  启用swapfile12mkswap &#x2F;swapfileswapon &#x2F;swapfile  加入fstab &#x2F;swapfile        swap        swap      defaults         0 0  查看swap1cat">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Linux swapfile 的创建使用">
-<meta property="og:url" content="https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="冷清的博客">
+<meta property="og:url" content="https://blog.lengqing.org/page/4/index.html">
 <meta property="og:site_name" content="冷清的博客">
-<meta property="og:description" content="以root或sudo运行创建swapfile1dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;swapfile bs&#x3D;1024 count&#x3D;2048000  启用swapfile12mkswap &#x2F;swapfileswapon &#x2F;swapfile  加入fstab &#x2F;swapfile        swap        swap      defaults         0 0  查看swap1cat">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2018-07-16T17:53:00.000Z">
-<meta property="article:modified_time" content="2020-04-14T09:14:16.000Z">
 <meta property="article:author" content="lengqing5977">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/">
+<link rel="canonical" href="https://blog.lengqing.org/page/4/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true,
+    isHome: true,
+    isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Linux swapfile 的创建使用 | 冷清的博客</title>
+  <title>冷清的博客</title>
   
 
 
@@ -184,10 +180,10 @@
             
 
   <div class="posts-expand">
-      
+        
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -201,7 +197,8 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Linux swapfile 的创建使用
+          
+            <a href="/2018/07/17/Linux/Linux-swapfile/" class="post-title-link" itemprop="url">Linux swapfile 的创建使用</a>
         </h1>
 
         <div class="post-meta">
@@ -243,7 +240,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="以root或sudo运行"><a href="#以root或sudo运行" class="headerlink" title="以root或sudo运行"></a>以root或sudo运行</h3><h4 id="创建swapfile"><a href="#创建swapfile" class="headerlink" title="创建swapfile"></a>创建swapfile</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd if=/dev/zero of=/swapfile bs=1024 count=2048000</span><br></pre></td></tr></table></figure>
+          <h3 id="以root或sudo运行"><a href="#以root或sudo运行" class="headerlink" title="以root或sudo运行"></a>以root或sudo运行</h3><h4 id="创建swapfile"><a href="#创建swapfile" class="headerlink" title="创建swapfile"></a>创建swapfile</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd if=/dev/zero of=/swapfile bs=1024 count=2048000</span><br></pre></td></tr></table></figure>
 
 <h4 id="启用swapfile"><a href="#启用swapfile" class="headerlink" title="启用swapfile"></a>启用swapfile</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkswap /swapfile</span><br><span class="line">swapon /swapfile</span><br></pre></td></tr></table></figure>
 
@@ -255,56 +252,150 @@
 <h4 id="关闭swap"><a href="#关闭swap" class="headerlink" title="关闭swap"></a>关闭swap</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff /swapfile</span><br></pre></td></tr></table></figure>
 <h4 id="删除swapfile"><a href="#删除swapfile" class="headerlink" title="删除swapfile"></a>删除swapfile</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm /swapfile</span><br></pre></td></tr></table></figure>
 
+      
     </div>
 
     
     
     
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>lengqing5977
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/" title="Linux swapfile 的创建使用">https://blog.lengqing.org/2018/07/17/Linux/Linux-swapfile/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-hans" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-
       <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
         
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lengqing.org/2007/04/27/Windows/Windows-Server-2003-R2/">
 
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-                <a href="/2007/04/27/Windows/Windows-Server-2003-R2/" rel="next" title="Windows Server 2003 R2 with SP2">
-                  <i class="fa fa-chevron-left"></i> Windows Server 2003 R2 with SP2
-                </a>
-            </div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://blog.lengqing.org/pics/blog/touxiangc.png">
+      <meta itemprop="name" content="lengqing5977">
+      <meta itemprop="description" content="">
+    </span>
 
-            <span class="post-nav-divider"></span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="冷清的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2007/04/27/Windows/Windows-Server-2003-R2/" class="post-title-link" itemprop="url">Windows Server 2003 R2 with SP2</a>
+        </h1>
 
-            <div class="post-nav-prev post-nav-item">
-                <a href="/2018/07/29/Linux/Debian-install-on-my-zsh/" rel="prev" title="Debian 安装 zsh 及 oh-my-zsh">
-                  Debian 安装 zsh 及 oh-my-zsh <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-      </footer>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2007-04-27 00:00:00" itemprop="dateCreated datePublished" datetime="2007-04-27T00:00:00+08:00">2007-04-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-14 17:14:16" itemprop="dateModified" datetime="2020-04-14T17:14:16+08:00">2020-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Windows/" itemprop="url" rel="index">
+                    <span itemprop="name">Windows</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
     
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-1"><a href="#Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-1" class="headerlink" title="Windows Server 2003 R2 Standard Edition with SP2 - Disc 1"></a>Windows Server 2003 R2 Standard Edition with SP2 - Disc 1</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_with_sp2_cd1_X13-13927.iso|636440576|E4657FA463E5BAF6367AC9B888731E95|/</code></p>
+<p>SHA1:2B26F48A5AECF5E70074FCCC700ED3AAEA6E4558</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-2"><a href="#Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-2" class="headerlink" title="Windows Server 2003 R2 Standard Edition with SP2 - Disc 2"></a>Windows Server 2003 R2 Standard Edition with SP2 - Disc 2</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_with_sp2_cd2_X13-13942.iso|129697792|5BC51A4C9BEA3B339DA30387964A43CA|/</code></p>
+<p>SHA1:00A4207565F82E584916F2CBB61E7CFF00B95C8B</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-1-VL"><a href="#Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-1-VL" class="headerlink" title="Windows Server 2003 R2 Standard Edition with SP2 - Disc 1 - VL"></a>Windows Server 2003 R2 Standard Edition with SP2 - Disc 1 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_with_sp2_vl_cd1_X13-46532.iso|636440576|B39CCD2AE1E7EEC42328FD475A376778|/</code></p>
+<p>SHA1:30A43BE69B14767548C311F96AF8649FE77C0F5E</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-2-VL"><a href="#Windows-Server-2003-R2-Standard-Edition-with-SP2-Disc-2-VL" class="headerlink" title="Windows Server 2003 R2, Standard Edition with SP2 - Disc 2 - VL"></a>Windows Server 2003 R2, Standard Edition with SP2 - Disc 2 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_with_sp2_vl_cd2_X13-13942.iso|129697792|5BC51A4C9BEA3B339DA30387964A43CA|/</code></p>
+<p>SHA1:00A4207565F82E584916F2CBB61E7CFF00B95C8B</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-1"><a href="#Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-1" class="headerlink" title="Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 1"></a>Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 1</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_x64_with_sp2_cd1_X13-28810.iso|646285312|E72B80540955703098E6AEF1DE434BAF|/</code></p>
+<p>SHA1:78B186DCDD181001F246096D4EA2ED7D169895F3</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-2"><a href="#Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-2" class="headerlink" title="Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 2"></a>Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 2</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_x64_with_sp2_cd2_X13-28819.iso|179202048|0D66FCFAFBAE092B8F92DDC337B4CC54|/</code></p>
+<p>SHA1:BC1449BCB357DF9A699AD929F6FD2ACB6629A186</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-1-VL"><a href="#Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-1-VL" class="headerlink" title="Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 1 - VL"></a>Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 1 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_x64_with_sp2_vl_cd1_X13-47363.iso|646281216|401FEF8B592F58BDAE69821512FA9681|/</code></p>
+<p>SHA1:5A27D75F82E2495663F3257857BA4FA39307331C</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-2-VL"><a href="#Windows-Server-2003-R2-Standard-x64-Edition-with-SP2-Disc-2-VL" class="headerlink" title="Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 2 - VL"></a>Windows Server 2003 R2 Standard x64 Edition with SP2 - Disc 2 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_standard_x64_with_sp2_vl_cd2_X13-28819.iso|179202048|0D66FCFAFBAE092B8F92DDC337B4CC54|/</code></p>
+<p>SHA1:BC1449BCB357DF9A699AD929F6FD2ACB6629A186</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Enterprise-Edition-with-SP2-Disc-1-VL"><a href="#Windows-Server-2003-R2-Enterprise-Edition-with-SP2-Disc-1-VL" class="headerlink" title="Windows Server 2003 R2 Enterprise Edition with SP2 - Disc 1 - VL"></a>Windows Server 2003 R2 Enterprise Edition with SP2 - Disc 1 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_enterprise_with_sp2_vl_cd1_X13-46432.iso|637917184|284DC0E76945125035B9208B9199E465|/</code></p>
+<p>SHA1:D0DD2782E9387328EBFA45D8804B6850ACABF520</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Enterprise-Edition-with-SP2-Disc-2-VL"><a href="#Windows-Server-2003-R2-Enterprise-Edition-with-SP2-Disc-2-VL" class="headerlink" title="Windows Server 2003 R2 Enterprise Edition with SP2 - Disc 2 - VL"></a>Windows Server 2003 R2 Enterprise Edition with SP2 - Disc 2 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_enterprise_with_sp2_vl_cd2_X13-13895.iso|129703936|512C89A5839FFC8A3F3124ACB9E9CB75|/</code></p>
+<p>SHA1:4B364E848FCC59762DDDCED1493248E2896EE033</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Enterprise-x64-Edition-with-SP2-Disc-1-VL"><a href="#Windows-Server-2003-R2-Enterprise-x64-Edition-with-SP2-Disc-1-VL" class="headerlink" title="Windows Server 2003 R2 Enterprise x64 Edition with SP2 - Disc 1 - VL"></a>Windows Server 2003 R2 Enterprise x64 Edition with SP2 - Disc 1 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso|647686144|107F10D2A7FF12FFF0602FF60602BB37|/</code></p>
+<p>SHA1:FDA1A0401CA610F6E3A7780D6DB004DA2F944138</p>
+</blockquote>
+<h5 id="Windows-Server-2003-R2-Enterprise-x64-Edition-with-SP2-Disc-2-VL"><a href="#Windows-Server-2003-R2-Enterprise-x64-Edition-with-SP2-Disc-2-VL" class="headerlink" title="Windows Server 2003 R2 Enterprise x64 Edition with SP2 - Disc 2 - VL"></a>Windows Server 2003 R2 Enterprise x64 Edition with SP2 - Disc 2 - VL</h5><blockquote>
+<p><code>ed2k://|file|cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd2_X13-35321.iso|179204096|651EDB26E33E1AD0F14430245D4D44C6|/</code></p>
+<p>SHA1:42CB2508F37B7B3331B8EB7A04D58DB508248821</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
   </article>
   
   
   
 
   </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
+
 
 
           </div>
@@ -333,7 +424,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#以root或sudo运行"><span class="nav-number">1.</span> <span class="nav-text">以root或sudo运行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建swapfile"><span class="nav-number">1.1.</span> <span class="nav-text">创建swapfile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启用swapfile"><span class="nav-number">1.2.</span> <span class="nav-text">启用swapfile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加入fstab"><span class="nav-number">1.3.</span> <span class="nav-text">加入fstab</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看swap"><span class="nav-number">1.4.</span> <span class="nav-text">查看swap</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关闭swap"><span class="nav-number">1.5.</span> <span class="nav-text">关闭swap</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除swapfile"><span class="nav-number">1.6.</span> <span class="nav-text">删除swapfile</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
