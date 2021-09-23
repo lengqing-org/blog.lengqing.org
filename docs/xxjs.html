@@ -6,7 +6,7 @@
 <link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -137,16 +137,6 @@ kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
-#math-inline-preview-content { zoom: 1.1; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -165,9 +155,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-diagram-panel .messageText { stroke: none !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
 .md-fences.md-fences-math { font-size: 1em; }
-.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
 .md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
 .md-fences-advanced:not(.md-focus) { background: inherit; }
 .typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
@@ -210,6 +198,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
 
 
 :root {
@@ -225,10 +214,11 @@ mark .md-meta { color: rgb(0, 0, 0); }
     /* open-sans-700italic - latin-ext_latin */
   html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -600,9 +590,9 @@ header, .context-menu, .megamenu-content, footer{
 
 
 
-</style><title></title>
+</style><title>xxjs</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h6 id='一信息的作用'><span>一、信息的作用 </span></h6><p><span>信息是人类认识客观世界及其发展规律的基础</span></p><p><span>信息是科学研究的必要条件</span></p><p><span>信息是管理和决策的主要参考依据</span></p><p><span>信息是推动社会发展的资源</span></p><h6 id='二信息源类型'><span>二、信息源类型</span></h6><p><span>1、按加工层次分零次一次二次三次信息</span></p><p><span>2、按载体类型分印刷型缩微型视听型机读型</span></p><p><span>3、按载体类型分期刊会议学位论文专利标准文献</span></p><p><span>4.按信息的保存性划分可分为正式记录的、非正式记录的信息源</span></p><p><span>5.按信息产生的时间顺序划分可分为先导、实时、滞后信息源</span></p><p><span>6.按信息的表现形式划分可分为文字、图像、数值数据和语音信息</span></p><p><span>7.按信息的学科划分可分为社会科学、自然科学信息源</span></p><h6 id='三信息素养的表现'><span>三、信息素养的表现</span></h6><p><span>运用信息工具 获取信息 处理信息</span></p><p><span>生成信息 创造信息 发挥信息的效益</span></p><p><span>信息协作 信息免疫</span></p><h6 id='四对大学生信息素养的要求'><span>四、对大学生信息素养的要求</span></h6><p><span>能够准确地确立信息问题</span></p><p><span>能够高效地获取所需要的信息</span></p><p><span>能批判性地评价信息及其来源</span></p><p><span>能够有效地分析与综合利用信息</span></p><p><span>懂得信息技术的使用所产生的经济、法律和社会问题</span></p><h6 id='五信息意识主要包括'><span>五、信息意识主要包括:</span></h6><p><span>认识到信息的重要作用</span></p><p><span>对信息有积极的内在需求</span></p><p><span>对信息的敏感性和洞察力</span></p><h6 id='六信息意识在信息素养教育中的重要作用'><span>六、信息意识在信息素养教育中的重要作用</span></h6><p><span>信息意识能使大学生充分认识到信息的重要性</span></p><p><span>信息意识能促使大学生养成敏锐的信息感知能力</span></p><p><span>信息意识有助于大学生形成有效的信息判断能力</span></p><p><span>信息意识能指导和控制大学生的信息行为</span></p><h6 id='七检索系统的功能'><span>七、检索系统的功能</span></h6><p><span>报道、存储、检索职能</span></p><h6 id='八检索系统的评估标准'><span>八、检索系统的评估标准</span></h6><p><span>信息的收录范围</span></p><p><span>信息特征标识的详略</span></p><p><span>信息摘录及标识的质量</span></p><p><span>信息报道的时差 检索功能的完善</span></p><h6 id='九检索系统的构成模式'><span>九、检索系统的构成模式</span></h6><p><span>信息数据的选择、处理、录入、维护子系统</span></p><p><span>词表和标引子系统</span></p><p><span>检索子系统</span></p><p><span>用户接口子系统</span></p><h6 id='十计算机检索方法'><span>十、计算机检索方法</span></h6><p><span>1.布尔逻辑检索 2.位置逻辑检索</span></p><p><span>3.截词检索   4.字段限定检索</span></p><p><span>5.括号检索   6.短语检索</span></p><p><span>7.加权检索   8.智能检索</span></p><p><span>9.区分大小写的检索</span></p><h6 id='十一信息检索步骤'><span>十一、信息检索步骤</span></h6><p><span>检索课题的分析</span></p><p><span>检索系统和数据库的选择</span></p><p><span>检索途径与检索词的选择</span></p><p><span>检索式的编制</span></p><p><span>检索方案的评价、调整</span></p><p><span>检索结果的输出</span></p><p><span>拓宽检索</span></p><p><span>充分利用各种资源</span></p><h6 id='十二提高检索效果的措施和方法'><span>十二、提高检索效果的措施和方法</span></h6><p><span>提高检索系统的质量</span></p><p><span>提高用户利用检索系统的能力</span></p><p><span>制定优化的检索策略</span></p><h6 id='十三信息检索途径'><span>十三、信息检索途径</span></h6><p><span>外部：责任者、题名、文献类型途径</span></p><p><span>内部：分类、主题、分类主题途径</span></p><p><span>其他：出处、时间、任意词、专门术语途径</span></p><h6 id='十四信息检索方法'><span>十四、信息检索方法</span></h6><p><span>1、常规法（顺查法倒查法抽查法引文法）</span></p><p><span>2、追溯法3、综合法4、浏览法5、即期积累法</span></p><h6 id='十五检索语言的主要作用如下'><span>十五、检索语言的主要作用如下</span></h6><p><span>1、标引信息内容及其外表特征，保证不同标引人员表征信息内容的一致性；</span></p><p><span>2、对内容相同的信息加以集中或揭示其相关性；</span></p><p><span>3、使信息的存储集中化、系统化、组织化，便于检索者按照一定的排列次序进行有序化检索；</span></p><p><span>4、便于将标引用语和检索用语进行相符性比较，保证不同检索人员表述相同信息内容的一致性，以及检索人员与标引人员对相同信息内容表述的一致性；</span></p><p><span>5、保证检索者按不同需要检索信息时，都能获得最高查全率和查准率。</span></p><p>&nbsp;</p></div></div>
+<div id='write'  class=''><h6 id='信息之所以区别于物质与能量并具有与物质能量同等的重要作用源于信息所拥有的质性信息作为一种资源主要具有以下性质'><span>信息之所以区别于物质与能量，并具有与物质、能量同等的重要作用，源于信息所拥有的质性。信息作为一种资源，主要具有以下性质：</span></h6><p><span>1.普遍性 2.传递性 3.依存性 4.相对性 5.可加工性 6.时效性 7.可共享性</span></p><h6 id='信息源类型'><span>信息源类型</span></h6><p><span>1按加工层次分，零次信息，一次信息，二次信息，三次信息</span></p><p><span>2按信息产生的时间顺序划分，可分为先导信息源、实时信息源、滞后信息源</span></p><p><span>3按载体分，印刷型，缩微型，试听型，机读型</span></p><p><span>4按出版类型分，期刊论文，会议论文，学位论文，专利文献，标准文献，科技报告，技术档案。</span></p><p><span>5按信息的保存性划分，可分为正式记录的信息源、非正式记录的信息源</span></p><p><span>6按信息的表现形式划分，可分为文字信息、图像信息、数值数据信息和语音信息</span></p><p><span>7按信息的学科划分，可分为社会科学信息源、自然科学信息源。</span></p><h6 id='信息的作用'><span>信息的作用</span></h6><p><span>1信息是人类认识客观世界及其发展规律的基础</span></p><p><span>2信息是科学研究的必要条件</span></p><p><span>3信息是管理和决策的主要参考依据</span></p><p><span>4信息是推动社会发展的资源</span></p><h6 id='信息素养的表现'><span>信息素养的表现</span></h6><p><span>1运用信息工具，2获取信息，3处理信息，4生成信息，5创造信息，6发挥信息的效益，7信息协作，8信息免疫。</span></p><h6 id='信息素养的内涵包括信息意识信息能力信息道德终身学习的能力'><span>信息素养的内涵包括：信息意识、信息能力、信息道德、终身学习的能力。</span></h6><p><span>①信息意识，信息意识指人们对情报现象的思想观点和人的情报嗅觉程度，是人们对社会产生的各种理论、观点、事物、现象从情报角度的理解、感受和评价能力。具体来说它包含了对于信息敏锐的感受力、持久的注意力和对信息价值的判断力、洞察力。</span></p><p><span>②信息能力，信息能力也可以说是信息技能，包括确定信息需求的时机，选择信息源，高效获取信息、处理评估信息、有效利用信息的能力。</span></p><p><span>③信息道德，信息道德指人们在信息活动中应遵循的道德规范，如保护知识产权、尊重个人隐私、抵制不良信息等。</span></p><p><span>④终身学习的能力，获得终身学习的能力是信息素养教育的终极目标。信息素养教育应该把焦点放在学习者身上，即受教育者或者被培训者身上，而不是放在指导者或者教员身上，让学习者学会学习，获得终身学习的能力。</span></p><h6 id='信息意识主要包括'><span>信息意识主要包括: </span></h6><p><span>（1）认识到信息的重要作用，</span></p><p><span>（2）对信息有积极的内在需求。</span></p><p><span>（3）对信息的敏感性和洞察力。</span></p><h6 id='信息伦理构成可概括为两个方面三个层次'><span>信息伦理构成可概括为两个方面，三个层次。</span></h6><p><span>两个方面，即主观方面和客观方面。</span></p><p><span>三个层次，即信息道德意识、信息道德关系、信息道德活动</span></p><h6 id='信息法律的内容'><span>信息法律的内容</span></h6><p><span>1信息作品著作权，2信息传播法律制度，3信息获取和信息消费法律，4信息技术专利权，5信息安全与计算机犯罪。</span></p><h6 id='检索系统的功能'><span>检索系统的功能</span></h6><p><span>报道、存储、检索职能</span></p><h6 id='检索系统的评估标准'><span>检索系统的评估标准</span></h6><p><span>信息的收录范围</span></p><p><span>信息特征标识的详略</span></p><p><span>信息摘录及标识的质量</span></p><p><span>信息报道的时差 检索功能的完善</span></p><h6 id='数据库的类型'><span>数据库的类型</span></h6><p><span>按计算机检索的工作方式划分：1联机检索数据库，2光盘检索数据库，3网络检索数据库。</span></p><p><span>按内容和功能划分：1书目数据库，2全文数据库，3数值数据库，4事实数据库，5超文本型数据库。</span></p><h6 id='常用计算机检索技术'><span>常用计算机检索技术</span></h6><p><span>1布尔逻辑检索，2词间位置检索，3截词检索，4词根检索，5限制检索，6加权检索，7禁用词。</span></p><h6 id='信息检索途径'><span>信息检索途径</span></h6><p><span>一、文献外部特征的检索途径，1责任者途径，2题名途径，3文献类型途径，4代码途径。</span></p><p><span>二、文献内容特征的检索途径，1分类途径，2主题途径，3分类主题途径。</span></p><p><span>三、其他检索途径，1出处途径，2时间途径，3任意词途径，4专门术语途径。</span></p><h6 id='中图法主要由类目表复分表和索引三部分组成'><span>《中图法》主要由类目表、复分表和索引三部分组成。</span></h6><h6 id='mesh表由主题词字顺表树状结构表及副主题同表组成'><span>MeSH表由主题词字顺表、树状结构表及副主题同表组成。</span></h6><h6 id='信息检索的步骤'><span>信息检索的步骤：</span></h6><p><span>1检索课题的分析，2检索系统和数据库的选择，3检索途径和检索词的选择，4检索式的编制，5检索方案的评价、调整，6检索结果的输出，7拓宽检索，8充分利用各种资源。</span></p><h6 id='提高检索效果的措施和方法'><span>提高检索效果的措施和方法</span></h6><p><span>提高检索系统的质量</span></p><p><span>提高用户利用检索系统的能力</span></p><p><span>制定优化的检索策略</span></p><h6 id='检索效果评价指标'><span>检索效果评价指标</span></h6><p><span>1查全率=检出的相关文献量/检索系统中的相关文献总量x100%</span></p><p><span>2查准率=检出的相关文献量/检索的相关文献总量x100%</span></p><h6 id='信息检索方法'><span>信息检索方法</span></h6><p><span>1、常规法（顺查法倒查法抽查法引文法）</span></p><p><span>2、追溯法3、综合法4、浏览法5、即期积累法</span></p><h6 id='检索语言的主要作用如下'><span>检索语言的主要作用如下</span></h6><p><span>1、标引信息内容及其外表特征，保证不同标引人员表征信息内容的一致性；</span></p><p><span>2、对内容相同的信息加以集中或揭示其相关性；</span></p><p><span>3、使信息的存储集中化、系统化、组织化，便于检索者按照一定的排列次序进行有序化检索；</span></p><p><span>4、便于将标引用语和检索用语进行相符性比较，保证不同检索人员表述相同信息内容的一致性，以及检索人员与标引人员对相同信息内容表述的一致性；</span></p><p><span>5、保证检索者按不同需要检索信息时，都能获得最高查全率和查准率。</span></p></div></div>
 </body>
 </html>
